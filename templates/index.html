@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Yoga Pose Gallery</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+    
+</head>
+<body>
+    <header>
+        <h1>Yoga Pose Gallery</h1>
+    </header>
+
+    <main>
+        <div class="pose-gallery">
+            <div class="horizontal-gallery">
+                <div class="pose-card">
+                    <a href="{{ url_for('input_feed', image_id='rep') }}">
+                        <img src="{{ url_for('static', filename='resized_poses/rep.jpg') }}" alt="Pose 1">
+                        <div class="pose-title">rep</div>
+                    </a>
+                </div>            
+                
+                <div class="pose-card">
+                    <a href="{{ url_for('input_feed', image_id='squat') }}">
+                        <img src="{{ url_for('static', filename='resized_poses/squat.jpg') }}" alt="Pose 2">
+                        <div class="pose-title">squat</div>
+                    </a>
+                </div>
+                <div class="pose-card">
+                    <a href="{{ url_for('input_feed', image_id='cobra') }}">
+                        <img src="{{ url_for('static', filename='resized_poses/cobra_pose.jpg') }}" alt="Pose 3">
+                        <div class="pose-title">cobra pose</div>
+                    </a>
+                </div>
+                <div class="pose-card">
+                    <a href="{{ url_for('input_feed', image_id='DFD') }}">
+                        <img src="{{ url_for('static', filename='resized_poses/DownwardFacingDog.jpg') }}" alt="Pose 4">
+                        <div class="pose-title">Downward Facing Dog</div>
+                    </a>
+                </div>
+                <div class="pose-card">
+                    <a href="{{ url_for('input_feed', image_id='warrior') }}">
+                        <img src="{{ url_for('static', filename='resized_poses/Warrior_pose.jpg') }}" alt="Pose 5">
+                        <div class="pose-title">Warrior pose</div>
+                    </a>
+                </div>
+                <div class="pose-card">
+                    <a href="{{ url_for('input_feed', image_id='chair') }}">
+                        <img src="{{ url_for('static', filename='resized_poses/Chair-pose.png') }}" alt="Pose 5">
+                        <div class="pose-title">Chair pose</div>
+                    </a>
+                </div>
+                <div class="pose-card">
+                    <a href="{{ url_for('input_feed', image_id='mountain') }}">
+                        <img src="{{ url_for('static', filename='resized_poses/Mountain-Pose.jpg') }}" alt="Pose 5">
+                        <div class="pose-title">Mountain pose</div>
+                    </a>
+                </div>
+                <div class="pose-card">
+                    <a href="{{ url_for('input_feed', image_id='FBP') }}">
+                        <img src="{{ url_for('static', filename='resized_poses/Forward-bend.jpg') }}" alt="Pose 5">
+                        <div class="pose-title">Forward bend pose</div>
+                    </a>
+                </div>
+                <div class="pose-card">
+                    <a href="{{ url_for('input_feed', image_id='plank') }}">
+                        <img src="{{ url_for('static', filename='resized_poses/Plank-pose.jpg') }}" alt="Pose 5">
+                        <div class="pose-title">Plank pose</div>
+                    </a>
+                </div>
+            </div>            
+        
+            <!-- Add more pose cards here -->
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Your Yoga Pose Gallery</p>
+    </footer>
+</body>
+</html>
