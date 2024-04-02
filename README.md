@@ -17,7 +17,9 @@ The Yoga Pose Estimator is a project aimed at providing real-time feedback to us
 **Features**
 
 Real-time Pose Estimation: Utilizes computer vision algorithms to detect and track key points on the user's body in real-time.
+
 Pose Evaluation: Provides instant feedback on the user's pose execution, indicating whether the pose is being performed correctly or not.
+
 User-Friendly Interface: Offers an intuitive interface for easy navigation and pose selection.
 
 **Installation**
@@ -31,7 +33,10 @@ pip install -r requirements.txt
 
 Launch the application:
 python app.py
+
 Browse through the image gallery and select the desired yoga pose.
+
 Turn on your camera and position yourself to perform the selected pose.
+
 Receive real-time feedback on your pose execution.
 
